@@ -85,7 +85,7 @@ export default class UI{
                             <div class="card-body">
                                 <h5 class="card-title">${element.name}</h5>
                                 <p class="card-text">$${element.price}</p>
-                                <p class="card-text"><b>Con un escuento de $${element.discount}</b> </p>
+                                <p class="card-text"><b>Con un descuento de $${element.discount}</b> </p>
                             </div>
                                 <div class="card-footer">
                                 <small class="text-muted">${element.category_name} </small>
