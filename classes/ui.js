@@ -70,6 +70,7 @@ export default class UI{
 
     //MOSTRAR CONTENIDO CON DESCUENTO
     discountProduct(){
+        const CONTENEDOR = document.getElementById("app")
         this.replaceContent()
         try {
             fetch(`https://bsale-restapi.herokuapp.com/descuentos`)
