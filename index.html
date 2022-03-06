@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bsales Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="./assets/tiendaIcono.png">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light px-5 shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand shadow-hover" href="/">Bsales Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active shadow-hover" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active shadow-hover" aria-current="page" href="#" id="btn_descuentos">Descuentos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle shadow-hover" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categorias
+              </a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" id="btn_ron" value="ron">Ron</a></li>
+                <li><a class="dropdown-item" id="btn_pisco" value="pisco">Pisco</a></li>
+                <li><a class="dropdown-item" id="btn_vodka" value="vodka">Vodka</a></li>
+                <li><a class="dropdown-item" id="btn_energetica" value="bebida energetica">Energeticas</a></li>
+                <li><a class="dropdown-item" id="btn_bebida" value="bebida">Bebidas</a></li>
+                <li><a class="dropdown-item" id="btn_snack" value="snack">Snacks</a></li>
+              </ul>
+            </li>      
+          </ul>
+          <!--BUSCADOR-->
+          <form id="form-search" class="d-flex">
+            <input id="input-search" class="form-control me-2" type="search" placeholder="producto" aria-label="Search">
+            <input id="btn-search" class="btn btn-primary btn-block" type="submit" value="Buscar"></input>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <!--PRODUCTOS-->
+  <main id="main" class="p-5 ">
+    <div class="container-sm">
+      <div id="app" class="row row-cols-1 row-cols-lg-4 g-4">
+  
+      </div>
+    </div>
+  </main>
+  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="./app.js" type="module"></script>
+  <!-- JS -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
